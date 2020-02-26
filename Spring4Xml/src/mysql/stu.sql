@@ -1,0 +1,29 @@
+DROP DATABASE IF EXISTS stu;
+CREATE DATABASE stu;
+USE stu;
+
+CREATE TABLE tab_major(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	NAME VARCHAR(20)
+);
+
+CREATE TABLE tab_stu(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	NAME VARCHAR(20),
+	sex CHAR(2),
+	major_id INT,
+	FOREIGN KEY(major_id) REFERENCES tab_major(id)
+);
+
+CREATE TABLE tab_course(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	NAME VARCHAR(20)
+);
+
+CREATE TABLE stu_course(
+	stu_id INT,
+	course_id INT,
+	PRIMARY KEY(stu_id,course_id),
+	FOREIGN KEY(stu_id) REFERENCES tab_stu(id) ON DELETE CASCADE,
+	FOREIGN KEY(course_id) REFERENCES tab_course(id) ON DELETE CASCADE
+);

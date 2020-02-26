@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="AutoProxy4Cglib" />
+        <module name="AutoProxy4Jdk" />
+        <module name="MyBatis4Annocation" />
+        <module name="MyBatis4Xml" />
+        <module name="Spring4Annocation" />
+        <module name="Spring4Xml" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="AutoProxy4Cglib" target="1.8" />
+      <module name="AutoProxy4Jdk" target="1.8" />
+      <module name="MyBatis4Annocation" target="1.8" />
+      <module name="MyBatis4Xml" target="1.8" />
+      <module name="MyBatisLearn" target="1.5" />
+      <module name="Spring4Annocation" target="1.5" />
+      <module name="Spring4Xml" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
