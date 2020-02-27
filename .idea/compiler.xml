@@ -20,7 +20,7 @@
       <module name="MyBatis4Annocation" target="1.8" />
       <module name="MyBatis4Xml" target="1.8" />
       <module name="MyBatisLearn" target="1.5" />
-      <module name="Spring4Annocation" target="1.5" />
+      <module name="Spring4Annocation" target="1.8" />
       <module name="Spring4Xml" target="1.8" />
     </bytecodeTargetLevel>
   </component>

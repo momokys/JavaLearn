@@ -3,8 +3,6 @@ import domain.Student;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import service.StudentService;
@@ -39,8 +37,6 @@ public class SpringTest {
     @Test
     public void finAllStudentTest(){
 
-        ApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class);
-        service = context.getBean("studentService", StudentService.class);
         List<Student> all = service.findAll();
 
         for (Student stu : all){
